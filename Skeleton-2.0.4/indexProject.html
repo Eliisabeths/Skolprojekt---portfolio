@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+
+  <meta charset="utf-8">
+  <title> Elisabeth portfolio</title>
+  <meta name="description" content="">
+  <meta name="author" content="">
+
+
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+
+
+  <link href="//fonts.googleapis.com/css?family=Raleway:400,300,600" rel="stylesheet" type="text/css">
+
+
+  <link rel="stylesheet" href="css/normalize.css">
+  <link rel="stylesheet" href="css/skeleton.css">
+  
+  <link href="style.css" rel="stylesheet">
+
+  <link rel="icon" type="image/x-icon" href="img/favicon.ico">
+
+
+</head>
+<body>
+
+    <div class="topnav">
+        <a class="#contact" href="indexContact.html">Contact</a>
+        <a class="active" href="indexProject.html">Project</a>
+        <a class="#about" href="indexAbout.html">About</a>
+        <a class="" href="index.html">Home</a>
+      </div>
+
+
+      <h1> PIXER </h1>
+      <div class="slideshow-container">
+        <div class="mySlides1">
+          <img src="img/pixer1.png" style="width:100%">
+        </div>
+      
+        <div class="mySlides1">
+          <img src="img/pixer2.png" style="width:100%">
+        </div>
+      
+        <div class="mySlides1">
+          <img src="img/pixer3.png" style="width:100%">
+        </div>
+      
+        <a class="prev" onclick="plusSlides(-1, 0)">&#10094;</a>
+        <a class="next" onclick="plusSlides(1, 0)">&#10095;</a>
+      </div>
+      
+      <h1> Microsoft Teams</h1>
+      <div class="slideshow-container">
+        <div class="mySlides2">
+          <img src="img/microsoft1.png" style="width:100%">
+        </div>
+      
+        <div class="mySlides2">
+          <img src="img/microsoft2.png" style="width:100%">
+        </div>
+      
+        <div class="mySlides2">
+          <img src="img/microsoft3.png" style="width:100%">
+        </div>
+      
+        <a class="prev" onclick="plusSlides(-1, 1)">&#10094;</a>
+        <a class="next" onclick="plusSlides(1, 1)">&#10095;</a>
+      </div>
+
+
+      <script>
+        var slideIndex = [1,1];
+        var slideId = ["mySlides1", "mySlides2"]
+        showSlides(1, 0);
+        showSlides(1, 1);
+        
+        function plusSlides(n, no) {
+          showSlides(slideIndex[no] += n, no);
+        }
+        
+        function showSlides(n, no) {
+          var i;
+          var x = document.getElementsByClassName(slideId[no]);
+          if (n > x.length) {slideIndex[no] = 1}    
+          if (n < 1) {slideIndex[no] = x.length}
+          for (i = 0; i < x.length; i++) {
+             x[i].style.display = "none";  
+          }
+          x[slideIndex[no]-1].style.display = "block";  
+        }
+        </script>
+
+
+      <footer id="footer">
+        <h4>Feel free to contact me about collaborations or just to say hello!</h4>
+        <h4> (Currently looking for an internship)</h4>
+        <h4><a href="mailto:hege@example.com">elisabeth.theodoridou@outlook.com</a></h4>
+      </footer>
+
+</body>
+</html>

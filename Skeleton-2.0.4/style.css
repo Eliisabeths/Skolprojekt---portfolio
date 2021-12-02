@@ -1,0 +1,319 @@
+
+.topnav {
+  background-color: rgb(161, 161, 161);
+  overflow: hidden;
+}
+
+.topnav a {
+  float: right;
+  color: #f2f2f2;
+  text-align: center;
+  padding: 14px 16px;
+  text-decoration: none;
+  font-size: 17px;
+}
+
+.topnav a:hover {
+  background-color: #ddd;
+  color: black;
+}
+
+.topnav a.active {
+  background-color: #363636;
+  color: white;
+}
+
+.iconDetails {
+  margin-left: 2%;
+  float: left;
+  height: 100px;
+  width: 100px;
+}
+
+.container2 {
+  width: 270px;
+  height: auto;
+  padding: 1%;
+  float: left;
+
+}
+
+h4 {
+  margin: 0
+  
+}
+
+.left {
+  float: left;
+  width: 45px;
+}
+
+.right {
+  float: left;
+  margin: 0 0 0 5px;
+  width: 215px;
+}
+
+
+.image {
+  position: relative;
+  width: 400px;
+  margin-left: auto;
+  margin-right: auto;
+    
+}
+
+.image__img {
+  display: block;
+  width: 100%;
+
+}
+
+.image__overlay {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: rgba(0, 0, 0, 0.6);
+  color: white;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  opacity: 0;
+  transition: opacity 0.25s;
+}
+
+.image__overlay>* {
+  transform: translateY(20px);
+  transition: transform 0.25s;
+}
+
+.image__overlay:hover {
+  opacity: 1;
+}
+
+.image__overlay:hover>* {
+
+  transform: translateY(0);
+}
+
+.image__title {
+  font-size: 2em;
+  font-weight: bold;
+
+}
+
+.image__description {
+  font-size: 1.25em;
+  margin-top: 0.25em;
+
+}
+
+.row {
+  display: flex;
+}
+
+.column {
+  flex: 33.33%;
+  padding: 5px;
+}
+
+.center {
+
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  width: 50%;
+
+}
+
+.Elisabeth {
+  font-size: 70px;
+  font-family:'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+  text-align: left;
+  width: 600px;
+  margin: auto;
+}
+
+h1 {
+  text-align: center;
+  font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+  font-size: xx-large;
+  color: #dd7e6b;
+  font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+}
+
+.element {
+  width: 100%;
+  height: 100%;
+  animation: pulse 5s infinite;
+}
+
+@keyframes pulse {
+  0% {
+    color: #dd7e6b;
+  }
+
+  50% {
+    color: grey;
+  }
+
+  100% {
+    color: #dd7e6b;
+  }
+
+}
+
+h2 {
+  text-align: center;
+  font-size: large;
+  font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+
+}
+
+h3 {
+  text-align: center;
+  font-size: small;
+  font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+}
+
+h4 {
+  text-align: center;
+  font-size: smaller;
+  font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+}
+
+.om_mig {
+  text-align: left;
+  max-width: 700px;
+  margin: auto;
+  line-height: 1.8;
+  font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif
+}
+
+p {
+  text-align: center;
+  font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+}
+
+footer {
+  background-color: rgb(161, 161, 161);
+  font-size: 20px;
+}
+
+a:link {
+  text-decoration: none;
+}
+
+a:visited {
+  text-decoration: none;
+}
+
+a:active {
+  text-decoration: none;
+}
+
+a:link {
+  color: black;
+  text-decoration: none;
+}
+
+a:visited {
+  color: black;
+}
+
+a:hover {
+  text-decoration: underline;
+}
+
+.row>.column {
+  padding: 0 8px;
+}
+
+.row:after {
+  content: "";
+  display: table;
+  clear: both;
+}
+
+
+* {
+  box-sizing: border-box
+}
+
+.mySlides1,
+.mySlides2 {
+  display: none
+}
+
+img {
+  vertical-align: middle;
+}
+
+/* Slideshow container */
+.slideshow-container {
+  max-width: 800px;
+  position: relative;
+  margin: auto;
+  border-style: solid;
+  border-color: rgb(197, 197, 197);
+  padding: 20px;
+  min-height: 300px;
+}
+
+/* Next & previous buttons */
+.prev,
+.next {
+  cursor: pointer;
+  position: absolute;
+  top: 50%;
+  width: auto;
+  padding: 16px;
+  margin-top: -22px;
+  color: black;
+  font-weight: bold;
+  font-size: 18px;
+  transition: 0.6s ease;
+  border-radius: 0 3px 3px 0;
+  user-select: none;
+}
+
+/* Position the "next button" to the right */
+.next {
+  right: 0;
+  border-radius: 3px 0 0 3px;
+}
+
+/* On hover, add a grey background color */
+.prev:hover,
+.next:hover {
+  background-color: #f1f1f1;
+  color: black;
+}
+
+@media only screen and (max-width: 600px) {
+
+  .om_mig {
+    font-size: small;
+  }
+
+  .topnav a {
+    padding: 10px 15px;
+    font-size: 13px;
+  }
+
+  footer {
+    background-color: rgb(161, 161, 161);
+    font-size: 15px;
+  }
+  
+  .Elisabeth {
+    font-size: 40px;
+    text-align: left;
+    width: 400px;
+    margin: auto;
+  }
+
+}
